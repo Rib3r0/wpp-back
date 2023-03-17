@@ -1,8 +1,8 @@
 'use strict'
 
-import {getcontatos} from "./module/get_contact.js"
+let contatos = await fetch("http://localhost:8080/contacts/1")
+console.log(contatos.json())
 
-contatos = getcontatos()
 //import {contatos} from "./recursos/contatos.js"
 var id = 0
 

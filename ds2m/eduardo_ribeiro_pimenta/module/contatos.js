@@ -570,7 +570,7 @@ const contatos = { "whats-users" :
                         }
 
                         let getContacts = (id) => {
-                          let contatosEnviar = contatos["whats-users"].indexOf(id-1)
+                          let contatosEnviar = contatos["whats-users"][id-1]
                           return contatosEnviar.contacts
                         }
                         module.exports ={

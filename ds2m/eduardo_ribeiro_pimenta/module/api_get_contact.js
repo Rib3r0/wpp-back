@@ -39,7 +39,7 @@ app.get('/contacts/:id', cors(), async function(request, response, next){
         let contacts = contatos.getContacts(user)
         if(contacts){
             statusCode = 200
-            json =contacts
+            json = contacts
         }else{
             statusCode = 404
             
