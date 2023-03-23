@@ -3,6 +3,7 @@
 import {getContatos} from "./module/get_contact.js"
 
 let contatos = await getContatos()
+console.log(contatos)
 
 //import {contatos} from "./recursos/contatos.js"
 var id = 0
@@ -101,7 +102,7 @@ const criarMensagens = (contatoSelecionado) => {
     // let selecionadoNome = contatoSelecionado.currentTarget.children[1].children[0].textContent
     let selecionadoNome = contatoSelecionado.currentTarget.querySelector('.contact__name').textContent
  
-    
+
 
     
 
@@ -134,6 +135,7 @@ var last = 0
 const mudarFundo = (card) => {
     let containerUnselect = document.getElementById(last)
     let containerSelected = document.getElementById(card.currentTarget.id)
+
     containerUnselect.classList.remove('selected')
     containerSelected.classList.add('selected')
     last = card.currentTarget.id
